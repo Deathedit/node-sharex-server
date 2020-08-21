@@ -1,6 +1,5 @@
 # node-sharex-server
-- [What is this](#what-is-this)
-# features
+## features
 * Frontend:
     * Gallery (WIP)
     * admin panel - view logs, apikey, port (TBH)
@@ -10,5 +9,5 @@
 
 
 [README](https://github.com/ravi0lii/node-sharex-server#readme)
-# License
+##License
 [MIT](/LICENSE)
