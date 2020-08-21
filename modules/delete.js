@@ -1,6 +1,6 @@
-var logger = require('../logger.js');
-const config = require('../config.json')
+const config = require('../config.json');
 var fileExists = require('file-exists');
+var logger = require('../logger.js');
 var fs = require('fs');
 
 module.exports.load = (app) => {

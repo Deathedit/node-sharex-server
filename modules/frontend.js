@@ -1,7 +1,22 @@
-const version = require('../package.json').version;
-
 module.exports.load = (app) => {
+    const express = require('express');
+    //variables
+    var version = require('../package.json').version;
+
+    /*
+    app.engine('html', require('ejs').renderFile);
+    app.set('view engine', 'html');
+    app.set('views', __dirname);
+
     app.get('/',(req,res) => {
-        res.send('<title>node-sharex-server</title> This server runs <a href="https://github.com/Deathedit/node-sharex-server">node-sharex-server</a> v' + version + ' by <a href="https://moquo.de">Moquo</a>.')
-    })
+        res.render('html/index.html', {version:version});
+    });
+
+    app.get('/images',(req,res) => {
+        app.use('/uploads', express.static('./uploads'));
+        res.render('html/images.html');
+    });
+    */
+    app.use(express.static('./public'))
+
 }

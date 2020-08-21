@@ -32,6 +32,19 @@ app.use(fileUpload({
     }
 }));
 
+
+
+app.get('/users', (req,res) => {
+    const user1 = {id: "1", username: "test"}
+    const user2 = {id: "2", username: "test"}
+    res.json([user1, user2])
+})
+
+app.get('/user/:id', (req,res) => {
+    console.log(req.params.id);
+    res.end();
+})
+
 //Load Modules
 const FLoader = require('./modules/frontend.js');
 FLoader.load(app)

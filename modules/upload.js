@@ -1,6 +1,7 @@
-var logger = require('../logger.js');
 const config = require('../config.json')
+
 var randomString = require('random-string');
+var logger = require('../logger.js');
 var path = require('path');
 
 module.exports.load = (app) => {
