@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Moquo/node-sharex-upload-server.git"
+    "url": "git+https://github.com/Deathedit/node-sharex-server.git"
   },
   "keywords": [
     "sharex",
@@ -18,9 +18,9 @@
   "author": "Moquo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Moquo/node-sharex-upload-server/issues"
+    "url": "https://github.com/Deathedit/node-sharex-upload-server/issues"
   },
-  "homepage": "https://github.com/Moquo/node-sharex-upload-server#readme",
+  "homepage": "https://github.com/Deathedit/node-sharex-upload-server#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "colors": "^1.1.2",
