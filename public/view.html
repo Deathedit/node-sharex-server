@@ -1,6 +1,6 @@
 <html lang="en">
     <head>
-        <title>images</title>
+        <title>view - <%=id%></title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -19,15 +19,16 @@
                 </ul>
         </nav>
         <div class="container">
+            <h3><%=id%></h3>
             <div class="jumbotron">
-                <p class="text-center">search for image ID:</p>
-                <script>function buttonClick(){var url=document.getElementById("inputURL").value;window.location='/view/'+url;}</script>
-                    <div class="col-md4">
-                        <input class="form-control" type="text" id="inputURL" name="inputURL" value=""/> <br>
-                        <p class="text-center">
-                            <a class="btn btn-primary" value="click" OnClick="buttonClick()">Search</a>
-                        </p>
-                    </div>
+                <p class="text-center"> 
+                    <a class="btn btn-primary" href="/f/<%=id%>.png" role="button">Raw</a>
+                    <a class="btn btn-danger" href="/delete/?filename=<%=id%>.png&key=<%=key%>" role="button">Delete</a>
+                </p>
+                <!-- Split code -->
+                <p class="text-center">
+                    <img src="/f/<%=id%>.png" class="img-fluid rounded">
+                </p>
             </div>
         </div>
         <div class="footer-copyright text-center py-3">This server runs <a href="https://github.com/Deathedit/node-sharex-server">node-sharex-server</a></div>
