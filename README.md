@@ -9,5 +9,5 @@
 
 
 [README](https://github.com/ravi0lii/node-sharex-server#readme)
-##License
+## License
 [MIT](/LICENSE)
